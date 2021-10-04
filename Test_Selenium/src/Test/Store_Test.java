@@ -29,8 +29,8 @@ public class Store_Test extends Store_Base {
 																// credentials.
 		store_login.logIn();
 		Thread.sleep(1000);
-		String username = xcelreader.getStringData("Log", 1, 1);
-		String password = xcelreader.getStringData("Log", 1, 2);
+		String username = excelreader.getStringData("Log", 1, 1);
+		String password = excelreader.getStringData("Log", 1, 2);
 		store_login.inputUsername(username);
 		store_login.inputPassword(password);
 		store_login.submit();
@@ -47,8 +47,8 @@ public class Store_Test extends Store_Base {
 														// "Password" but incorrect "Username".
 		store_login.logIn();
 		for (int i = 1; i < 6; i++) {
-			String username = xcelreader.getStringData("Log", i, 3);
-			String password = xcelreader.getStringData("Log", 1, 2);
+			String username = excelreader.getStringData("Log", i, 3);
+			String password = excelreader.getStringData("Log", 1, 2);
 			store_login.getUsername().clear();
 			store_login.getPassword().clear();
 			store_login.inputUsername(username);
@@ -66,8 +66,8 @@ public class Store_Test extends Store_Base {
 	public void incorrectPassword() throws InterruptedException {// Checking to see if User can LogIn with correct																// "Username" but incorrect "Password".
 		store_login.logIn();
 		for (int i = 1; i < 5; i++) {
-			String username = xcelreader.getStringData("Log", 1, 1);
-			String password = xcelreader.getStringData("Log", i, 4);
+			String username = excelreader.getStringData("Log", 1, 1);
+			String password = excelreader.getStringData("Log", i, 4);
 			store_login.getUsername().clear();
 			store_login.getPassword().clear();
 			store_login.inputUsername(username);
@@ -85,8 +85,8 @@ public class Store_Test extends Store_Base {
 	public void addingElementsIntoCart() throws InterruptedException {//Checking to see if User can add items into cart
 		store_login.logIn();
 		Thread.sleep(500);
-		String username = xcelreader.getStringData("Log", 1, 1);
-		String password = xcelreader.getStringData("Log", 1, 2);
+		String username = excelreader.getStringData("Log", 1, 1);
+		String password = excelreader.getStringData("Log", 1, 2);
 		store_login.inputUsername(username);
 		store_login.inputPassword(password);
 		store_login.submit();
@@ -114,8 +114,8 @@ public class Store_Test extends Store_Base {
     public void AddintSamsungS6AndMacBookAirIntoCart() throws InterruptedException {//Checking to see if User can add there 2 specific items
 		store_login.logIn();
 		Thread.sleep(500);
-		String username = xcelreader.getStringData("Log", 1, 1);
-		String password = xcelreader.getStringData("Log", 1, 2);
+		String username = excelreader.getStringData("Log", 1, 1);
+		String password = excelreader.getStringData("Log", 1, 2);
 		store_login.inputUsername(username);
 		store_login.inputPassword(password);
 		store_login.submit();

@@ -15,7 +15,7 @@ import Pages.Store_LogIn;
 public class Store_Base {
 
 	public WebDriver driver;
-	public XcelReader xcelreader;
+	public ExcelReader Excelreader;
 	public Store_LogIn store_login;
 	public AddToCart addtocart;
 	public Cart cart;
@@ -29,7 +29,7 @@ public class Store_Base {
 		addtocart = new AddToCart(driver);
 		cart = new Cart(driver);
 		wd = new WebDriverWait(driver, 20);
-		xcelreader = new XcelReader("C:\\Users\\Korisnik\\Desktop\\DataTest.xlsx");
+		excelreader = new ExcelReader("C:\\Users\\Korisnik\\Desktop\\DataTest.xlsx");
 	}
 	@AfterClass
 	public void tearDown() {

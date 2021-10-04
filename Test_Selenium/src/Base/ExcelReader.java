@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class XcelReader {
+public class ExcelReader {
 	 File file;
 	 FileInputStream fis;
 	 XSSFWorkbook wb;
@@ -18,7 +18,7 @@ public class XcelReader {
 	 XSSFCell cell;
 	
 	
-	public XcelReader (String filePath) throws IOException {
+	public ExcelReader (String filePath) throws IOException {
 		this.file = new File(filePath);
 		this.fis = new FileInputStream(file);
 		this.wb = new XSSFWorkbook(fis);
